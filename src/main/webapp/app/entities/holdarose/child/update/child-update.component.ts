@@ -28,13 +28,13 @@ export class ChildUpdateComponent implements OnInit {
 
   editForm = this.fb.group({
     id: [],
-    name: [],
-    age: [],
-    image: [],
+    name: [null, [Validators.required]],
+    age: [null, [Validators.required]],
+    image: [null, [Validators.required]],
     imageContentType: [],
-    gender: [],
+    gender: [null, [Validators.required]],
     status: [],
-    foundation: [],
+    foundation: [null, [Validators.required]],
   });
 
 
